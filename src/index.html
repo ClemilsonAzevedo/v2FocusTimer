@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer v2 | Pomodoro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="./main.js" defer></script>
+</head>
+<body>
+  <main id="app">
+    <section>
+      <div class="timer">
+        <span class="minutes">00</span>
+        <span>:</span>
+        <span class="seconds">00</span>
+      </div>
+      <div class="controls">
+        <button class="ph ph-play-circle">
+          <span class="sr-only">play counter</span>
+        </button>
+        <button class="ph ph-stop-circle">
+          <span class="sr-only">stop counter</span>
+        </button>
+        <button class="ph ph-plus-circle">
+          <span class="sr-only">Increased time</span>
+        </button>
+        <button class="ph ph-minus-circle"">
+          <span class="sr-only">Decrease time</span>
+        </button>
+      </div>
+    </section>
+    <section id="cards">
+      <div class="card">
+        <button class="ph ph-tree"><span class="sr-only">Forest Sound</sp></button>
+      </div>
+      <div class="card">
+        <button class="ph ph-cloud-rain"><span class="sr-only">Rain Sound</span></button>
+      </div>
+      <div class="card">
+        <button class="ph ph-storefront"><span class="sr-only">Store Sound</span></button>
+      </div>
+      <div class="card">
+        <button class="ph ph-flame"><span class="sr-only">Fire Sound</span></button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
