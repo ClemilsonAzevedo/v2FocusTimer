@@ -12,14 +12,14 @@
   <script type="module" src="./main.js" defer></script>
 </head>
 <body>
-  <main id="app">
-    <section>
+  <main id="app" class="flex">
+    <section class="flex">
       <div class="timer">
         <span class="minutes">00</span>
-        <span>:</span>
+        <span class="points">:</span>
         <span class="seconds">00</span>
       </div>
-      <div class="controls">
+      <div class="controls flex">
         <button class="ph ph-play-circle">
           <span class="sr-only">play counter</span>
         </button>
@@ -34,6 +34,7 @@
         </button>
       </div>
     </section>
+    
     <section id="cards">
       <div class="card">
         <button class="ph ph-tree"><span class="sr-only">Forest Sound</sp></button>
