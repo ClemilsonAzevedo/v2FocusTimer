@@ -28,6 +28,17 @@
   appearance: none;
 }
 
+html:not(.running) .ph-play-circle{
+  display: none;
+}
+
+button{
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  font-size: 4.5rem;
+}
+
 body{
   width: 100vw;
   height: 100vh;
@@ -71,11 +82,7 @@ section .controls{
 
 .controls button{
   width: 4.8rem;
-  height: 4.8rem;
-  border: 0;
-  font-size: 4.8rem;
-  background: transparent;
-  cursor: pointer;  
+  height: 4.8rem; 
 }
 
 #cards {
@@ -83,13 +90,18 @@ section .controls{
   grid-template-columns: repeat(2, 1fr);
 }
 
+#cards .card{
+  border-radius: 2.4rem;
+  background-color: var(--box-color);
+}
+
 #cards .card button{
   width: 13.8rem;
   height: 15.2rem;
-  border-radius: 2.4rem;
-  font-size: 4.5rem;
-  border: 0;
-  background-color: var(--box-color);
-  cursor: pointer;
 }
 
+
+
+#cards .card .primary{
+  background-color: var(--primary-color);
+}
