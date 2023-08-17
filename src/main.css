@@ -28,7 +28,8 @@
   appearance: none;
 }
 
-html:not(.running) .ph-play-circle{
+html:not(.running) .ph-pause-circle,
+html.running .ph-play-circle{
   display: none;
 }
 
